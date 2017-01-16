@@ -24,7 +24,7 @@
      *
      */
     angular
-      .module('boilerplate')
+      .module('myPortfolio')
       .factory('LocalStorage', [
         '$window', '$rootScope', LocalStorageService
       ]);

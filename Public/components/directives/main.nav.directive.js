@@ -12,7 +12,7 @@
    *
    */
   angular
-    .module('boilerplate')
+    .module('myPortfolio')
     .directive('mainNav', tinMainNav);
 
   function tinMainNav() {

@@ -26,7 +26,7 @@
    * 
    */
   angular
-    .module('boilerplate')
+    .module('myPortfolio')
     .directive('myslider', slider);
 
   function slider() {

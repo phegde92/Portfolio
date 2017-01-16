@@ -16,7 +16,7 @@
    * Definition of the main app module and its dependencies
    */
   angular
-    .module('boilerplate', [
+    .module('myPortfolio', [
       'ngRoute'
     ])
     .config(config);
@@ -68,7 +68,7 @@
    * 
    */
   angular
-    .module('boilerplate')
+    .module('myPortfolio')
     .factory('authInterceptor', authInterceptor);
 
   authInterceptor.$inject = ['$rootScope', '$q', 'LocalStorage', '$location'];
@@ -100,7 +100,7 @@
    * Run block
    */
   angular
-    .module('boilerplate')
+    .module('myPortfolio')
     .run(run);
 
   run.$inject = ['$rootScope', '$location'];

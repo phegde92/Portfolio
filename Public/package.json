@@ -1,5 +1,5 @@
 {
-  "name": "angularjs-boilerplate",
+  "name": "angularjs-myPortfolio",
   "version": "1.1.7",
   "license": "MIT",
   "description": "Simple AngularJS Boilerplate to kick start your new project with SASS support and Gulp watch/build tasks",
@@ -46,7 +46,7 @@
   "keywords": [
     "angular",
     "angularjs",
-    "boilerplate",
+    "myPortfolio",
     "front-end",
     "app",
     "single-page",

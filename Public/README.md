@@ -16,7 +16,7 @@ Simple AngularJS Boilerplate to kick start your new project with SASS support an
 
 ## Download
 ```bash
-bower install angularjs-boilerplate
+bower install angularjs-myPortfolio
 ```
 
 or

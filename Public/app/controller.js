@@ -8,7 +8,7 @@
 ;(function() {
 
   angular
-    .module('boilerplate')
+    .module('myPortfolio')
     .controller('MainController', MainController);
 
   MainController.$inject = ['LocalStorage', 'QueryService'];

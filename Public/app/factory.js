@@ -9,7 +9,7 @@
    * 
    */
   angular
-    .module('boilerplate')
+    .module('myPortfolio')
     .factory('getDataFromAPI', getDataFromAPI);
 
   getDataFromAPI.$inject = ['$http', 'LocalStorage'];
