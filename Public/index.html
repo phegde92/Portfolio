@@ -11,14 +11,14 @@
 	<base href="/">
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>AngularJS Boilerplate</title>
-	<meta name="description" content="Simple AngularJS Boilerplate to kick start your new project with SASS support and Gulp watch/build tasks">
+	<title>Pramod Gopal Hegde</title>
+	<meta name="description" content="My Portfolio page">
 
 	<!-- mobile meta -->
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="images/geek.ico">
 
 	<!--[if IE]>
 			<link rel="shortcut icon" href="favicon.ico">
@@ -50,37 +50,31 @@
 
 
 	<!-- Magnific Popup core CSS file -->
-	<link rel="stylesheet" href="styles/css/magnific-popup.css"> 
+	<link rel="stylesheet" href="styles/css/magnific-popup.css">
 
-	<script src="js/nonangular/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+	<script src="js/nonangular/modernizr-2.8.3.min.js"></script>
+	<!-- Modernizr /-->
 
 </head>
 
-<body id="home">
-<!-- Preloader -->
+<body id="home" trianglify>
+	<!-- Preloader -->
 	<div id="preloader">
 		<div id="status"></div>
 	</div>
-	
 	<!-- FullScreen -->
-    <div class="intro-header">
-		<div class="col-xs-12 text-center abcen1">
-			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Flatfy</h1>
-			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Clean & minimal Theme</h3>
-			<ul class="list-inline intro-social-buttons">
-				<li><a href="https://twitter.com/galantiandrea" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">Twitter</span></a>
-				</li>
-				<li id="download" ><a href="#downloadlink" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name">Free Download</span></a>
-				</li>
-			</ul>
-		</div>    
-        <!-- /.container -->
+	<div class="intro-header">
+		<div class="col-xs-12 text-center abcen1 main-heading">
+			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Hi there!</h1>
+			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">Welcome to my Portfolio</h3>
+		</div>
+		<!-- /.container -->
 		<div class="col-xs-12 text-center abcen wow fadeIn">
-			<div class="button_down "> 
-				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="images/icon/circle.png" alt=""> </a>
+			<div class="button_down ">
+				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s" href="#whatis"> <img class="img_scroll" src="images/icon/circle.png" alt=""> </a>
 			</div>
 		</div>
-    </div>
+	</div>
 	<!--[if lt IE 8]>
 		    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
@@ -108,6 +102,8 @@
 <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <!-- endbuild -->
 
+<script src="bower_components/trianglify/dist/trianglify.min.js"></script>
+<script src="bower_components/angular-trianglify/angular-trianglify.js"></script>
 <!-- Angular components -->
 <!-- build:appcomponents js/appcomponents.js -->
 <script type="text/javascript" src="app/app.js"></script>
@@ -139,6 +135,14 @@
 		r.parentNode.insertBefore(e, r)
 	} (window, document, 'script', 'ga'));
 	ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+<script>
+	var pattern = Trianglify({
+		width: window.innerWidth,
+		height: window.innerHeight
+	});
+	document.body.appendChild(pattern.canvas())
 </script>
 
 </html>

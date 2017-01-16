@@ -17,7 +17,8 @@
    */
   angular
     .module('myPortfolio', [
-      'ngRoute'
+      'ngRoute',
+      'stefanoschrs.angular-trianglify'
     ])
     .config(config);
 

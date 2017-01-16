@@ -1,5 +1,9 @@
 <!-- Navigation -->
-<main-nav></main-nav>
+<!-- IF NAV REQUIRED -->
+
+<!--<main-nav></main-nav> -->
+
+
 <!-- NavBar-->
 <nav class="navbar-default" role="navigation">
     <div class="container">
@@ -10,17 +14,18 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-            <a class="navbar-brand" href="#home">Flatfy</a>
+            <a class="navbar-brand" href="#home">Pramod Gopal Hegde</a>
         </div>
 
         <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
             <ul class="nav navbar-nav">
 
-                <li class="menuItem"><a href="#whatis">What is?</a></li>
+                <li class="menuItem"><a href="#whatis">Who am I?</a></li>
                 <li class="menuItem"><a href="#useit">Use It</a></li>
                 <li class="menuItem"><a href="#screen">Screenshot</a></li>
                 <li class="menuItem"><a href="#credits">Credits</a></li>
                 <li class="menuItem"><a href="#contact">Contact</a></li>
+                <li class="menuItem" ng-click="trianglify()"> Change colors </li>
             </ul>
         </div>
 
@@ -32,68 +37,43 @@
 <div class="container">
 
     <div class="col-md-6 col-md-offset-3 text-center wrap_title">
-        <h2>What is?</h2>
-        <p class="lead" style="margin-top:0">A special thanks to Death.</p>
+        <h2>Who am I?</h2>
+        <p class="lead" style="margin-top:0">This guy down here</p>
+
+<img src="images/pointyHand.svg" class="pointy-hand" alt="">
 
 </div>
 
 <div class="row">
-
     <div class="col-sm-4 wow fadeInDown text-center">
-        <img class="rotate" src="../images/icon/tweet.svg" alt="Generic placeholder image">
-        <h3>Follow Me</h3>
-        <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-
+ <ul class="lead2">
+            <li>Name: Pramod Gopal Hegde</li>
+            <li>Where I live currently: Washington DC</li>
+            <li>How old I am : {{myAge}}</li>
+            
+        </ul>
+    </div>
+    <div class="col-sm-4 wow fadeInDown text-center">
+        <img src="../images/myPic1.png" alt="Generic placeholder image">
         <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
     </div>
     <!-- /.col-lg-4 -->
 
-    <div class="col-sm-4 wow fadeInDown text-center">
-        <img class="rotate" src="../images/icon/picture.svg" alt="Generic placeholder image">
-        <h3>Gallery</h3>
-        <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+    <div class="col-sm-3 wow fadeInDown text-center">
+       
+        <h3 class="lead2"> Currently I live in Kaiserslautern. <br>
+        I am pursing my Masters in Computer Science
+        </h3>
     </div>
     <!-- /.col-lg-4 -->
 
+</div>
+<div class="row tworow">
     <div class="col-sm-4 wow fadeInDown text-center">
-        <img class="rotate" src="../images/icon/retina.svg" alt="Generic placeholder image">
-        <h3>Retina</h3>
-        <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
     </div>
-    <!-- /.col-lg-4 -->
-
 </div>
 <!-- /.row -->
 
-<div class="row tworow">
-
-    <div class="col-sm-4  wow fadeInDown text-center">
-        <img class="rotate" src="../images/icon/laptop.svg" alt="Generic placeholder image">
-        <h3>Responsive</h3>
-        <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-    </div>
-    <!-- /.col-lg-4 -->
-
-    <div class="col-sm-4 wow fadeInDown text-center">
-        <img class="rotate" src="../images/icon/map.svg" alt="Generic placeholder image">
-        <h3>Google</h3>
-        <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-    </div>
-    <!-- /.col-lg-4 -->
-
-    <div class="col-sm-4 wow fadeInDown text-center">
-        <img class="rotate" src="../images/icon/browser.svg" alt="Generic placeholder image">
-        <h3>Bootstrap</h3>
-        <p class="lead">Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. </p>
-        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-    </div>
-    <!-- /.col-lg-4 -->
-
-</div>
 <!-- /.row -->
 </div>
 </div>
@@ -417,7 +397,8 @@
             <div class="col-md-7">
                 <h3 class="footer-title">Follow Me!</h3>
                 <p>Vuoi ricevere news su altri template?<br/> Visita Andrea Galanti.it e vedrai tutte le news riguardanti nuovi
-                    Theme!<br/> Go to: <a href="http://andreagalanti.it" target="_blank">andreagalanti.it</a>
+                    Theme!
+                    <br/> Go to: <a href="http://andreagalanti.it" target="_blank">andreagalanti.it</a>
                 </p>
 
                 <!-- LICENSE -->
@@ -456,20 +437,20 @@
 <!-- StikyMenu -->
 <script src="js/nonangular/stickUp.min.js"></script>
 <script type="text/javascript">
-        jQuery(function ($) {
-            $(document).ready(function () {
-                $('.navbar-default').stickUp();
+    jQuery(function ($) {
+        $(document).ready(function () {
+            $('.navbar-default').stickUp();
 
-            });
         });
+    });
 
-    </script>
+</script>
 <!-- Smoothscroll -->
 <script type="text/javascript" src="js/nonangular/jquery.corner.js"></script>
 <script src="js/nonangular/wow.min.js"></script>
 <script>
-        new WOW().init();
-    </script>
+    new WOW().init();
+</script>
 <script src="js/nonangular/classie.js"></script>
 <script src="js/nonangular/uiMorphingButton_inflow.js"></script>
 <!-- Magnific Popup core JS file -->
