@@ -38,7 +38,12 @@
 
     // routes
     $routeProvider
-      .when('/', {
+    .when('/', {
+        templateUrl: 'views/blah.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
+      .when('/home', {
         templateUrl: 'views/home.html',
         controller: 'MainController',
         controllerAs: 'main'
