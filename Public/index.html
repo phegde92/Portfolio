@@ -31,9 +31,9 @@
 
 	<!-- Custom Google Web Font -->
 	<link href="styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic'
 		rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 	<!-- Custom CSS-->
 	<link href="styles/css/general.css" rel="stylesheet">
 
@@ -100,10 +100,11 @@
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
 <script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
 <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-<!-- endbuild -->
-
 <script src="bower_components/trianglify/dist/trianglify.min.js"></script>
 <script src="bower_components/angular-trianglify/angular-trianglify.js"></script>
+<!-- endbuild -->
+
+
 <!-- Angular components -->
 <!-- build:appcomponents js/appcomponents.js -->
 <script type="text/javascript" src="app/app.js"></script>
@@ -143,6 +144,19 @@
 		height: window.innerHeight
 	});
 	document.body.appendChild(pattern.canvas())
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/3.6.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCy-YUfceSm1TMfYVFIGaMbS8Dt20Nrn2w",
+    authDomain: "portfolio-ad395.firebaseapp.com",
+    databaseURL: "https://portfolio-ad395.firebaseio.com",
+    storageBucket: "portfolio-ad395.appspot.com",
+    messagingSenderId: "83793066108"
+  };
+  firebase.initializeApp(config);
 </script>
 
 </html>

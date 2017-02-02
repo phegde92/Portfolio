@@ -11,7 +11,7 @@ body,html{height:100%;width:100%;overflow-x:hidden}
 .descp{margin:0;padding:0;line-height:40px!important}
 .lead2,.lead3{line-height:1.46428571;font-weight:300}
 .glyphicon{margin-right:10px}
-.lead2{margin-bottom:30px;margin-top:20px;font-size:18px}
+.lead2{margin-bottom:30px;margin-top:20px;font-size:18px;color:#000}
 .lead3{margin-bottom:0;margin-top:0;font-size:16px;color:#8D8D8D}
 .float{-webkit-animation-name:floatingx;-webkit-animation-duration:4s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:ease-in-out;-moz-animation-name:floating;-moz-animation-duration:4s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:ease-in-out}
 .phone-image{max-width:250px;margin:auto}
@@ -48,7 +48,10 @@ body,html{height:100%;width:100%;overflow-x:hidden}
 .intro-message>h1{margin:0;font-size:5em;font-weight:400;letter-spacing:3px}
 .intro-divider{width:400px;border-top:1px solid #f8f8f8;border-bottom:1px solid rgba(0,0,0,.2)}
 .intro-message>h3{margin:10px 0 0;font-size:2.8em;font-weight:300;letter-spacing:0}
+.profileimg-container{-webkit-transition:all .4s ease;transition:all .4s ease;position:absolute;left:0;right:0;bottom:0;margin:0 auto;top:0;height:250px;width:250px;border:7px solid #fff;border-radius:50%;background-color:rgba(255,255,255,.5)}
+.pointy-hand{height:50px;width:50px;margin:-27px 10px 10px}
 .network-name{font-size:14px;font-weight:400;letter-spacing:1.5px}
+.main-heading{color:#000}
 .content-section-a{background-color:#f8f8f8;padding:90px 0}
 .content-section-b{border-top:1px solid #e7e7e7;border-bottom:1px solid #e7e7e7;padding:90px 0}
 .section-heading{margin-bottom:30px}
